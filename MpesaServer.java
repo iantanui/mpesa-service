@@ -26,12 +26,12 @@ public class MpesaServer {
                     String action = requestParts[0];
 
                     if ("1".equals(action)) { // Check balance
-                        out.println("Your balance is: $" + balance);
+                        out.println("Your balance is: KES " + balance);
                     } else if ("2".equals(action)) { // Send money
                         double amount = Double.parseDouble(requestParts[1]);
                         if (amount <= balance) {
                             balance -= amount;
-                            out.println("Transaction successful. Your new balance is: $" + balance);
+                            out.println("Transaction successful. Your new balance is: KES " + balance);
                         } else {
                             out.println("Transaction failed. Insufficient funds.");
                         }
