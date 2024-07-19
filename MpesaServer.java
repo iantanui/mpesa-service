@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class MpesaServer {
     private static final int PORT = 12345;
-    private static double balance = 1026.58;
+    private static double balance = 1000.00;
 
     public static void main(String[] args) {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
